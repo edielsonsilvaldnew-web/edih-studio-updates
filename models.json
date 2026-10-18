@@ -1,7 +1,7 @@
 {
- "version": "1.8.2",
+ "version": "1.8.3",
  "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
- "notes": "Custo das gerações do Higgsfield no botão Gerar + todos os modelos do Higgsfield (Seedance 2.0, Kling 2.6, Kling O1, PixVerse V6, Hailuo 2.3, Wan 2.7/2.6, Z-Image, AI Influencer e mais).",
+ "notes": "Custo antes de gerar em todos os modelos (KIE, Higgsfield e ElevenLabs) e ajuste no Kling O3.",
  "updated": "2026-10-18",
  "models": [
   {
