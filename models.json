@@ -1,0 +1,734 @@
+{
+ "version": "1.8.0",
+ "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
+ "notes": "",
+ "updated": "2026-10-17",
+ "models": [
+  {
+   "provider": "kie",
+   "id": "nano-banana-2-1",
+   "name": "Nano Banana 2.1",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "nano-banana-pro",
+   "name": "Nano Banana Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "nano-banana-2",
+   "name": "Nano Banana 2",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "google/nano-banana-edit",
+   "name": "Nano Banana",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "google/nano-banana",
+   "name": "Nano Banana",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-5-flare-image-to-image",
+   "name": "GPT Image 2.5 Flare",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-5-flare-text-to-image",
+   "name": "GPT Image 2.5 Flare",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-5-sunburst-image-to-image",
+   "name": "GPT Image 2.5 Sunburst",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-5-sunburst-text-to-image",
+   "name": "GPT Image 2.5 Sunburst",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-image-to-image",
+   "name": "GPT Image 2",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image-2-text-to-image",
+   "name": "GPT Image 2",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "gpt-image/1.5-text-to-image",
+   "name": "GPT Image 1.5",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "4o-image-api",
+   "name": "4o Image",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-pro-image-to-image",
+   "name": "Seedream 5.0 Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-pro-text-to-image",
+   "name": "Seedream 5.0 Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-flash-image-to-image",
+   "name": "Seedream 5.0 Flash",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-flash-text-to-image",
+   "name": "Seedream 5.0 Flash",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-lite-image-to-image",
+   "name": "Seedream 5.0 Lite",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/5-lite-text-to-image",
+   "name": "Seedream 5.0 Lite",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/4.5-edit",
+   "name": "Seedream 4.5",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "seedream/4.5-text-to-image",
+   "name": "Seedream 4.5",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "qwen2-1/image-to-image",
+   "name": "Qwen Image 2.1",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "qwen2-1/text-to-image",
+   "name": "Qwen Image 2.1",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "qwen/image-edit",
+   "name": "Qwen Image Edit",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "flux-2/pro-image-to-image",
+   "name": "FLUX.2 Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "flux-2/pro-text-to-image",
+   "name": "FLUX.2 Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "flux1-kontext",
+   "name": "Flux Kontext",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "grok-imagine-image-2-0/image-edit",
+   "name": "Grok Imagine Image 2.0",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "grok-imagine-image-2-0/text-to-image",
+   "name": "Grok Imagine Image 2.0",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "google/imagen4-ultra",
+   "name": "Imagen 4 Ultra",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "google/imagen4",
+   "name": "Imagen 4",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-7-image-pro",
+   "name": "Wan 2.7 Image Pro",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-7-image",
+   "name": "Wan 2.7 Image",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "z-image",
+   "name": "Z-Image",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "ideogram/v3-text-to-image",
+   "name": "Ideogram V3",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "ideogram/character",
+   "name": "Ideogram Character",
+   "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "bytedance/seedance-2-5",
+   "name": "Seedance 2.5",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "bytedance/seedance-2",
+   "name": "Seedance 2.0",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "bytedance/seedance-2-fast",
+   "name": "Seedance 2.0 Fast",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "bytedance/seedance-2-mini",
+   "name": "Seedance 2.0 Mini",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "bytedance/seedance-1.5-pro",
+   "name": "Seedance 1.5 Pro",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "veo-3-1",
+   "name": "Veo 3.1",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling-3.0-omni/text-to-video",
+   "name": "Kling 3.0 Omni",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling/v3-turbo-image-to-video",
+   "name": "Kling 3.0 Turbo",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling/v3-turbo-text-to-video",
+   "name": "Kling 3.0 Turbo",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling-2.6/image-to-video",
+   "name": "Kling 2.6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling-2.6/text-to-video",
+   "name": "Kling 2.6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling/v2-5-turbo-image-to-video-pro",
+   "name": "Kling 2.5 Turbo Pro",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling/v2-5-turbo-text-to-video-pro",
+   "name": "Kling 2.5 Turbo Pro",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/3-0-video-prime",
+   "name": "Wan 3.0 Prime",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/3-0-video",
+   "name": "Wan 3.0",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-7-image-to-video",
+   "name": "Wan 2.7",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-7-text-to-video",
+   "name": "Wan 2.7",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-6-image-to-video",
+   "name": "Wan 2.6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-6-text-to-video",
+   "name": "Wan 2.6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-6-flash-image-to-video",
+   "name": "Wan 2.6 Flash",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "minimax-h3/image-to-video",
+   "name": "MiniMax H3 (Hailuo 03)",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "minimax-h3/text-to-video",
+   "name": "MiniMax H3 (Hailuo 03)",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "hailuo/2-3-image-to-video-pro",
+   "name": "Hailuo 2.3 Pro",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "vidu-q4/image-to-video",
+   "name": "Vidu Q4",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "vidu-q4/reference-to-video",
+   "name": "Vidu Q4",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "pixverse-v6/image-to-video",
+   "name": "PixVerse V6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "pixverse-v6/text-to-video",
+   "name": "PixVerse V6",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "pixverse-v6/transition",
+   "name": "PixVerse V6 Transição",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "grok-imagine-video-1-5-preview",
+   "name": "Grok Imagine Video 1.5",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "grok-imagine/image-to-video",
+   "name": "Grok Imagine Video",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "grok-imagine/text-to-video",
+   "name": "Grok Imagine Video",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "happyhorse-1-1/image-to-video",
+   "name": "HappyHorse 1.1",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "happyhorse-1-1/text-to-video",
+   "name": "HappyHorse 1.1",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "google/gemini-omni-flash-1-1",
+   "name": "Gemini Omni 1.1 Flash",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "runway",
+   "name": "Runway",
+   "cat": "video"
+  },
+  {
+   "provider": "kie",
+   "id": "kling-3.0/motion-control",
+   "name": "Motion Control 3.0",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "kling-2.6/motion-control",
+   "name": "Motion Control 2.6",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-2-animate-move",
+   "name": "Wan Animate — Mover",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "wan/2-2-animate-replace",
+   "name": "Wan Animate — Substituir",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "omnihuman-1-5",
+   "name": "OmniHuman 1.5",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "kling/ai-avatar-pro",
+   "name": "Kling Avatar Pro",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "infinitalk/from-audio",
+   "name": "InfiniTalk",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "volcengine/video-to-video-lip-sync",
+   "name": "Lip Sync de vídeo",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "topaz/image-upscale",
+   "name": "Topaz Image",
+   "cat": "upscale"
+  },
+  {
+   "provider": "kie",
+   "id": "recraft/crisp-upscale",
+   "name": "Recraft Crisp",
+   "cat": "upscale"
+  },
+  {
+   "provider": "kie",
+   "id": "topaz/video-upscale",
+   "name": "Topaz Video",
+   "cat": "upscale"
+  },
+  {
+   "provider": "kie",
+   "id": "recraft/remove-background",
+   "name": "Remover fundo",
+   "cat": "tools"
+  },
+  {
+   "provider": "kie",
+   "id": "elevenlabs/text-to-speech-multilingual-v2",
+   "name": "ElevenLabs Multilingual v2",
+   "cat": "audio"
+  },
+  {
+   "provider": "kie",
+   "id": "elevenlabs/text-to-speech-turbo-2-5",
+   "name": "ElevenLabs Turbo 2.5",
+   "cat": "audio"
+  },
+  {
+   "provider": "kie",
+   "id": "elevenlabs/text-to-dialogue-v3",
+   "name": "ElevenLabs Diálogo v3",
+   "cat": "audio"
+  },
+  {
+   "provider": "el",
+   "id": "el/clone",
+   "name": "Clonar voz",
+   "cat": "audio"
+  },
+  {
+   "provider": "el",
+   "id": "el/tts",
+   "name": "Falar com minha voz",
+   "cat": "audio"
+  },
+  {
+   "provider": "kie",
+   "id": "elevenlabs/audio-isolation",
+   "name": "Isolar voz",
+   "cat": "audio"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield-ai/soul/v2/standard",
+   "name": "Soul 2",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield-ai/soul/standard",
+   "name": "Soul",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "bytedance/seedance-2.5/image-to-video",
+   "name": "Seedance 2.5 (Higgsfield)",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "bytedance/seedance-2.5/reference-to-video",
+   "name": "Seedance 2.5 (Higgsfield)",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "bytedance/seedance-2.5/text-to-video",
+   "name": "Seedance 2.5 (Higgsfield)",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield/cinema-studio/4.0",
+   "name": "Cinema Studio 4.0",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "kling3:i2v",
+   "name": "Kling 3.0 (Higgsfield)",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "kling3:t2v",
+   "name": "Kling 3.0 (Higgsfield)",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield/genjutsu/motion-transfer/v1.0",
+   "name": "Genjutsu · Transferir movimento",
+   "cat": "tools"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield/genjutsu/object-swap/v1.0",
+   "name": "Genjutsu · Trocar objeto",
+   "cat": "tools"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0-prime/image-to-video",
+   "name": "Wan 3.0 Prime",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0-prime/reference-to-video",
+   "name": "Wan 3.0 Prime",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0-prime/text-to-video",
+   "name": "Wan 3.0 Prime",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0/image-to-video",
+   "name": "Wan 3.0",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0/reference-to-video",
+   "name": "Wan 3.0",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/wan-3.0/text-to-video",
+   "name": "Wan 3.0",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/happy-horse/v1.1/image-to-video",
+   "name": "HappyHorse 1.1",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/happy-horse/v1.1/reference-to-video",
+   "name": "HappyHorse 1.1",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/happy-horse/v1.1/text-to-video",
+   "name": "HappyHorse 1.1",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "minimax/h3/image-to-video",
+   "name": "MiniMax H3",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "minimax/h3/reference-to-video",
+   "name": "MiniMax H3",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "minimax/h3/text-to-video",
+   "name": "MiniMax H3",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "ltx:i2v",
+   "name": "LTX 2.5",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "ltx:t2v",
+   "name": "LTX 2.5",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "xai/grok-imagine-video/v1.5/reference-to-video",
+   "name": "Grok Imagine Video 1.5",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "kling-video/o3/image-reference",
+   "name": "Kling O3",
+   "cat": "video"
+  },
+  {
+   "provider": "hf",
+   "id": "higgsfield-ai/soul/cinema",
+   "name": "Soul Cinema",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "xai/grok-imagine-image-2.0",
+   "name": "Grok Image 2.0",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/qwen-image-3/edit",
+   "name": "Qwen Image 3",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "alibaba/qwen-image-3/text-to-image",
+   "name": "Qwen Image 3",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "ideogram/v4.0",
+   "name": "Ideogram 4.0",
+   "cat": "image"
+  },
+  {
+   "provider": "hf",
+   "id": "recraft/v4.1/text-to-image",
+   "name": "Recraft V4.1",
+   "cat": "image"
+  }
+ ]
+}
