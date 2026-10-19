@@ -1,8 +1,8 @@
 {
  "version": "1.8.3",
  "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
- "notes": "Custo antes de gerar em todos os modelos (KIE, Higgsfield e ElevenLabs) e ajuste no Kling O3.",
- "updated": "2026-10-18",
+ "notes": "Novos: Eleven v4 e v4 Turbo (ElevenLabs), Gemini 3.8 Flash TTS (KIE)",
+ "updated": "2026-10-19",
  "models": [
   {
    "provider": "kie",
@@ -849,6 +849,27 @@
    "id": "higgsfield/ai-influencer",
    "name": "AI Influencer",
    "cat": "image"
+  },
+  {
+   "provider": "kie",
+   "id": "google/gemini-3-8-flash-tts",
+   "name": "Gemini 3.8 Flash TTS",
+   "cat": "audio",
+   "note": "Texto para fala do Google, várias vozes e idiomas"
+  },
+  {
+   "provider": "el",
+   "id": "eleven_v4",
+   "name": "Eleven v4",
+   "cat": "audio",
+   "note": "Nova geração de voz da ElevenLabs, mais expressiva"
+  },
+  {
+   "provider": "el",
+   "id": "eleven_v4_turbo",
+   "name": "Eleven v4 Turbo",
+   "cat": "audio",
+   "note": "Versão rápida do Eleven v4, baixa latência"
   }
  ]
 }
