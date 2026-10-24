@@ -1,7 +1,7 @@
 {
-  "version": "1.9.5",
+  "version": "1.9.6",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Edih Studio 1.9.5: ao trocar de modelo o app mantém prompt, referências e opções; aba Áudio só em lista com forma de onda verde sincronizada e suave; versão do app visível no topo.",
+  "notes": "Edih Studio 1.9.6: botão \"Copiar prompt\" no topo de cada imagem e vídeo gerado; ao trocar de modelo o app mantém prompt, referências e opções; aba Áudio em lista com forma de onda sincronizada; versão visível no topo.",
   "updated": "2026-10-24",
   "models": [
     {
@@ -875,35 +875,35 @@
   "release": {
     "win": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/win/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/win/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/win/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/win/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/win/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/win/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/win/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/win/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/win/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/win/part4"
       ],
-      "sha256": "b3fc7ec8ddb7ae239dfea6356fdd5613b7504341761468f79ba563feaef1ef8d",
-      "size": 119622434
+      "sha256": "4ce7663d0e6efc1ef44862515c3b4be33ee4b2c2637ac26514ce4e66b4affc8c",
+      "size": 119622501
     },
     "mac_arm": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-arm/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-arm/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-arm/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-arm/part3"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-arm/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-arm/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-arm/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-arm/part3"
       ],
-      "sha256": "f04d4d744554eb616281c369f34d95945308466f497e73ddb7512f149e7c9a02",
-      "size": 101291244
+      "sha256": "2d1c2ef9fa2845ab62bd78de4370ebbe256460e2e56cd3e0fab7847067c08c75",
+      "size": 101252292
     },
     "mac_intel": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-intel/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-intel/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-intel/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-intel/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.5/mac-intel/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-intel/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-intel/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-intel/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-intel/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.6/mac-intel/part4"
       ],
-      "sha256": "ad5dcd14a1b038fb0b8183b60a90c915095c3ec73c5d299ce983108fd0007283",
-      "size": 110829688
+      "sha256": "b6ea3980a5bc346e2ebe012e4ccdc4a0c12a6ad7d72ad4239368882f79ed02bb",
+      "size": 110801292
     }
   }
 }
