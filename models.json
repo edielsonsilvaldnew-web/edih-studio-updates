@@ -1,7 +1,7 @@
 {
-  "version": "1.9.9",
+  "version": "1.9.10",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Conectar saldo do Higgsfield: login com Google liberado na janela do app.",
+  "notes": "Saldo do Higgsfield com login direto no navegador (Conector para Chrome).",
   "updated": "2026-10-26",
   "models": [
     {
@@ -1402,35 +1402,35 @@
   "release": {
     "win": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/win/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/win/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/win/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/win/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/win/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part4"
       ],
-      "sha256": "690b7ce06524dc525ac2969f8ddc09f490887ad04bef03c6dc6f255f39074fb2",
-      "size": 119794268
+      "sha256": "4538d079c567ba76ef2045ea2fb5f984bf7bd0047c5489a4b59b6763e813b045",
+      "size": 119808247
     },
     "mac_arm": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-arm/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-arm/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-arm/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-arm/part3"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part3"
       ],
-      "sha256": "fbf0114e3731e8bf42c44430158e9d8f592baea09f51dd9b65c6e8c2de960e5c",
-      "size": 101426004
+      "sha256": "3ce4e950c42ed9146fe1fa791f77247e7d9b9b66a555f04ac973cfb680d9f144",
+      "size": 101420372
     },
     "mac_intel": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-intel/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-intel/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-intel/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-intel/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.9/mac-intel/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part4"
       ],
-      "sha256": "bb126b73d133c87fb965455a2811b7ecf37dcec515a913a0ce672493fccdf531",
-      "size": 111017832
+      "sha256": "b0cb23cc6dc3b0297d4d3389a8f23987ea1a30386088b0f2323ce89c519b1ff3",
+      "size": 110998140
     }
   }
 }
