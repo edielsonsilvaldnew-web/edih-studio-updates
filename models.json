@@ -1,8 +1,8 @@
 {
   "version": "1.9.8",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Edih Studio 1.9.8: forma de onda dos áudios ocupa toda a largura e fica sincronizada com a reprodução do começo ao fim.",
-  "updated": "2026-10-24",
+  "notes": "Novos: Kling 4.0, LTX 2.5 Fast/Pro e Genjutsu Light (Higgsfield), FLUX 3 Klein (KIE)",
+  "updated": "2026-10-26",
   "models": [
     {
       "provider": "kie",
@@ -870,6 +870,533 @@
       "name": "Eleven v4 Turbo",
       "cat": "audio",
       "note": "Versão rápida do Eleven v4, baixa latência"
+    },
+    {
+      "provider": "hf",
+      "id": "kling-video/v4.0/text-to-video",
+      "name": "Kling 4.0",
+      "cat": "video",
+      "note": "Vídeos de até 30 s em 1080p, texto ou imagem para vídeo",
+      "def": {
+        "vendor": "Kling",
+        "prompt": "req",
+        "desc": "Kling 4.0: clipes de 3 a 30 s, com primeiro, intermediários e último quadro",
+        "group": "Kling",
+        "variants": [
+          {
+            "id": "kling-video/v4.0/text-to-video",
+            "needs": null
+          },
+          {
+            "id": "kling-video/v4.0/image-to-video",
+            "needs": "image_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_url",
+            "label": "Primeiro quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          },
+          {
+            "key": "image_urls",
+            "label": "Quadros intermediários",
+            "kind": "image",
+            "max": 8,
+            "as": "array"
+          },
+          {
+            "key": "end_image_url",
+            "label": "Último quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 3,
+            "max": 30,
+            "step": 1,
+            "def": 10,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "720p",
+              "1080p"
+            ],
+            "def": "1080p"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "9:16",
+              "1:1",
+              "21:9"
+            ],
+            "def": "16:9"
+          }
+        ],
+        "allow": {
+          "kling-video/v4.0/text-to-video": [
+            "prompt",
+            "duration",
+            "resolution",
+            "aspect_ratio"
+          ],
+          "kling-video/v4.0/image-to-video": [
+            "prompt",
+            "image_url",
+            "image_urls",
+            "end_image_url",
+            "duration",
+            "resolution"
+          ]
+        }
+      }
+    },
+    {
+      "provider": "hf",
+      "id": "higgsfield/genjutsu-light/motion-transfer/v1.0",
+      "name": "Genjutsu Light",
+      "cat": "tools",
+      "note": "Transfere o movimento de um vídeo para o seu personagem",
+      "def": {
+        "vendor": "Higgsfield",
+        "prompt": "opt",
+        "desc": "Versão leve do Genjutsu: usa até 15 s do vídeo de origem e mantém o áudio",
+        "group": "Genjutsu",
+        "variants": [
+          {
+            "id": "higgsfield/genjutsu-light/motion-transfer/v1.0",
+            "needs": null
+          }
+        ],
+        "inputs": [
+          {
+            "key": "video_url",
+            "label": "Vídeo de movimento",
+            "kind": "video",
+            "max": 1,
+            "as": "string"
+          },
+          {
+            "key": "image_urls",
+            "label": "Personagem",
+            "kind": "image",
+            "max": 1,
+            "as": "array"
+          }
+        ],
+        "params": [
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "480p",
+              "720p",
+              "1080p"
+            ],
+            "def": "720p"
+          }
+        ],
+        "allow": {
+          "higgsfield/genjutsu-light/motion-transfer/v1.0": [
+            "prompt",
+            "video_url",
+            "image_urls",
+            "resolution"
+          ]
+        }
+      }
+    },
+    {
+      "provider": "hf",
+      "id": "lightricks/ltx-2.5/text-to-video/fast",
+      "name": "LTX 2.5 Fast",
+      "cat": "video",
+      "note": "LTX 2.5 rápido, até 4K e com áudio",
+      "def": {
+        "vendor": "Lightricks",
+        "prompt": "req",
+        "desc": "LTX 2.5 Fast: vídeos de 6 a 10 s com áudio, até 4K",
+        "group": "LTX",
+        "variants": [
+          {
+            "id": "lightricks/ltx-2.5/text-to-video/fast",
+            "needs": null
+          },
+          {
+            "id": "lightricks/ltx-2.5/image-to-video/fast",
+            "needs": "image_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_url",
+            "label": "Imagem inicial",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "select",
+            "options": [
+              "6",
+              "8",
+              "10"
+            ],
+            "def": "6",
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "720p",
+              "1080p",
+              "2k",
+              "4k"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "9:16"
+            ],
+            "def": "16:9"
+          },
+          {
+            "key": "fps",
+            "label": "FPS",
+            "type": "select",
+            "options": [
+              "24",
+              "25",
+              "48",
+              "50"
+            ],
+            "def": "25",
+            "cast": "int"
+          },
+          {
+            "key": "generate_audio",
+            "label": "Gerar áudio",
+            "type": "toggle",
+            "def": true
+          }
+        ],
+        "allow": {
+          "lightricks/ltx-2.5/text-to-video/fast": [
+            "prompt",
+            "duration",
+            "resolution",
+            "aspect_ratio",
+            "fps",
+            "generate_audio"
+          ],
+          "lightricks/ltx-2.5/image-to-video/fast": [
+            "prompt",
+            "image_url",
+            "duration",
+            "resolution",
+            "aspect_ratio",
+            "fps",
+            "generate_audio"
+          ]
+        }
+      }
+    },
+    {
+      "provider": "hf",
+      "id": "lightricks/ltx-2.5/text-to-video/pro",
+      "name": "LTX 2.5 Pro",
+      "cat": "video",
+      "note": "LTX 2.5 em qualidade máxima, com áudio",
+      "def": {
+        "vendor": "Lightricks",
+        "prompt": "req",
+        "desc": "LTX 2.5 Pro: vídeos de 6 a 10 s com áudio, mais qualidade",
+        "group": "LTX",
+        "variants": [
+          {
+            "id": "lightricks/ltx-2.5/text-to-video/pro",
+            "needs": null
+          },
+          {
+            "id": "lightricks/ltx-2.5/image-to-video/pro",
+            "needs": "image_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_url",
+            "label": "Imagem inicial",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "select",
+            "options": [
+              "6",
+              "8",
+              "10"
+            ],
+            "def": "6",
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "720p",
+              "1080p"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "9:16"
+            ],
+            "def": "16:9"
+          },
+          {
+            "key": "generate_audio",
+            "label": "Gerar áudio",
+            "type": "toggle",
+            "def": true
+          }
+        ],
+        "allow": {
+          "lightricks/ltx-2.5/text-to-video/pro": [
+            "prompt",
+            "duration",
+            "resolution",
+            "aspect_ratio",
+            "generate_audio"
+          ],
+          "lightricks/ltx-2.5/image-to-video/pro": [
+            "prompt",
+            "image_url",
+            "duration",
+            "resolution",
+            "aspect_ratio",
+            "generate_audio"
+          ]
+        }
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "flux-3/klein-text-to-image",
+      "name": "FLUX 3 Klein",
+      "cat": "image",
+      "note": "Novo FLUX 3 da Black Forest Labs, até 4K",
+      "def": {
+        "vendor": "Black Forest Labs",
+        "prompt": "req",
+        "desc": "FLUX 3 Klein: texto para imagem, até 4 imagens por vez",
+        "group": "FLUX",
+        "variants": [
+          {
+            "id": "flux-3/klein-text-to-image",
+            "needs": null
+          }
+        ],
+        "inputs": [],
+        "params": [
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "1:1",
+              "4:3",
+              "3:4",
+              "3:2",
+              "2:3",
+              "16:9",
+              "9:16",
+              "21:9",
+              "9:21"
+            ],
+            "def": "1:1"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "1K",
+              "2K",
+              "4K"
+            ],
+            "def": "1K"
+          },
+          {
+            "key": "output_format",
+            "label": "Formato",
+            "type": "select",
+            "options": [
+              "png",
+              "jpeg",
+              "webp"
+            ],
+            "def": "png"
+          },
+          {
+            "key": "num_images",
+            "label": "Quantidade",
+            "type": "slider",
+            "min": 1,
+            "max": 4,
+            "step": 1,
+            "def": 1,
+            "cast": "int"
+          },
+          {
+            "key": "enhance_prompt",
+            "label": "Melhorar prompt",
+            "type": "toggle",
+            "def": true
+          },
+          {
+            "key": "seed",
+            "label": "Seed",
+            "type": "number",
+            "def": "",
+            "cast": "int"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "flux-3/klein-edit-image",
+      "name": "FLUX 3 Klein Edit",
+      "cat": "image",
+      "note": "Edita imagens com até 10 referências",
+      "def": {
+        "vendor": "Black Forest Labs",
+        "prompt": "req",
+        "desc": "FLUX 3 Klein: edição com 1 a 10 imagens de referência",
+        "group": "FLUX",
+        "variants": [
+          {
+            "id": "flux-3/klein-edit-image",
+            "needs": null
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_urls",
+            "label": "Imagens de referência",
+            "kind": "image",
+            "max": 10,
+            "as": "array"
+          }
+        ],
+        "params": [
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "auto",
+              "1:1",
+              "4:3",
+              "3:4",
+              "3:2",
+              "2:3",
+              "16:9",
+              "9:16",
+              "21:9",
+              "9:21"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "1K",
+              "2K",
+              "4K"
+            ],
+            "def": "1K"
+          },
+          {
+            "key": "output_format",
+            "label": "Formato",
+            "type": "select",
+            "options": [
+              "png",
+              "jpeg",
+              "webp"
+            ],
+            "def": "png"
+          },
+          {
+            "key": "num_images",
+            "label": "Quantidade",
+            "type": "slider",
+            "min": 1,
+            "max": 4,
+            "step": 1,
+            "def": 1,
+            "cast": "int"
+          },
+          {
+            "key": "enhance_prompt",
+            "label": "Melhorar prompt",
+            "type": "toggle",
+            "def": true
+          },
+          {
+            "key": "seed",
+            "label": "Seed",
+            "type": "number",
+            "def": "",
+            "cast": "int"
+          }
+        ]
+      }
     }
   ],
   "release": {
