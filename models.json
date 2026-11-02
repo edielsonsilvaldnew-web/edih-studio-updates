@@ -1,8 +1,8 @@
 {
   "version": "1.9.10",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Saldo do Higgsfield com login direto no navegador (Conector para Chrome).",
-  "updated": "2026-10-26",
+  "notes": "Novos: Kling 4.0, PixVerse V6 Max, OmniHuman 2.0 e Gemini 3.8 Flash-Lite TTS (KIE)",
+  "updated": "2026-11-02",
   "models": [
     {
       "provider": "kie",
@@ -1397,6 +1397,298 @@
           }
         ]
       }
+    },
+    {
+      "provider": "kie",
+      "id": "kling-4.0/reference-to-video",
+      "name": "Kling 4.0",
+      "cat": "video",
+      "note": "Vídeos de 3 a 30 s com referências ou quadros-chave",
+      "def": {
+        "vendor": "Kling",
+        "prompt": "req",
+        "desc": "Kling 4.0: até 30 s em 1080p, com imagens/vídeos de referência ou primeiro, intermediários e último quadro",
+        "group": "Kling",
+        "variants": [
+          {
+            "id": "kling-4.0/reference-to-video",
+            "needs": null
+          },
+          {
+            "id": "kling-4.0/keyframe-to-video",
+            "needs": "first_frame_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_urls",
+            "label": "Imagens de referência",
+            "kind": "image",
+            "max": 10,
+            "as": "array"
+          },
+          {
+            "key": "video_urls",
+            "label": "Vídeos de referência",
+            "kind": "video",
+            "max": 5,
+            "as": "array"
+          },
+          {
+            "key": "first_frame_url",
+            "label": "Primeiro quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          },
+          {
+            "key": "keyframe_urls",
+            "label": "Quadros intermediários",
+            "kind": "image",
+            "max": 8,
+            "as": "array"
+          },
+          {
+            "key": "last_frame_url",
+            "label": "Último quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 3,
+            "max": 30,
+            "step": 1,
+            "def": 5,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "720p",
+              "1080p"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "auto",
+              "16:9",
+              "9:16",
+              "1:1",
+              "21:9"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "keep_original_sound",
+            "label": "Manter som do vídeo de referência",
+            "type": "toggle",
+            "def": false
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "pixverse-v6-max/text-to-video",
+      "name": "PixVerse V6 Max (texto)",
+      "cat": "video",
+      "note": "PixVerse V6 Max: até 15 s em 1080p com áudio",
+      "def": {
+        "vendor": "PixVerse",
+        "prompt": "req",
+        "desc": "PixVerse V6 Max texto para vídeo, até 15 s e 1080p, com áudio opcional",
+        "group": "PixVerse",
+        "variants": [
+          {
+            "id": "pixverse-v6-max/text-to-video",
+            "needs": null
+          }
+        ],
+        "inputs": [],
+        "params": [
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "4:3",
+              "1:1",
+              "3:4",
+              "9:16",
+              "2:3",
+              "3:2",
+              "21:9"
+            ],
+            "def": "16:9"
+          },
+          {
+            "key": "quality",
+            "label": "Qualidade",
+            "type": "select",
+            "options": [
+              "360p",
+              "540p",
+              "720p",
+              "1080p"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "def": 5,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "generate_audio_switch",
+            "label": "Gerar áudio",
+            "type": "toggle",
+            "def": false
+          },
+          {
+            "key": "seed",
+            "label": "Seed",
+            "type": "number",
+            "def": "",
+            "cast": "int"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "pixverse-v6-max/image-to-video",
+      "name": "PixVerse V6 Max (imagem)",
+      "cat": "video",
+      "note": "Anima uma imagem com o PixVerse V6 Max",
+      "def": {
+        "vendor": "PixVerse",
+        "prompt": "req",
+        "desc": "PixVerse V6 Max imagem para vídeo: a proporção segue a imagem",
+        "group": "PixVerse",
+        "variants": [
+          {
+            "id": "pixverse-v6-max/image-to-video",
+            "needs": null
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_urls",
+            "label": "Primeiro quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "array"
+          }
+        ],
+        "params": [
+          {
+            "key": "quality",
+            "label": "Qualidade",
+            "type": "select",
+            "options": [
+              "360p",
+              "540p",
+              "720p",
+              "1080p"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "def": 5,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "generate_audio_switch",
+            "label": "Gerar áudio",
+            "type": "toggle",
+            "def": false
+          },
+          {
+            "key": "seed",
+            "label": "Seed",
+            "type": "number",
+            "def": "",
+            "cast": "int"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "omnihuman-2-0",
+      "name": "OmniHuman 2.0",
+      "cat": "tools",
+      "note": "Avatar falante a partir de uma foto e um áudio",
+      "def": {
+        "vendor": "ByteDance",
+        "prompt": "opt",
+        "desc": "OmniHuman 2.0: foto + áudio (4 a 300 s) viram vídeo 720p com fala e gestos",
+        "group": "Avatar",
+        "variants": [
+          {
+            "id": "omnihuman-2-0",
+            "needs": null
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_urls",
+            "label": "Foto",
+            "kind": "image",
+            "max": 1,
+            "as": "array"
+          },
+          {
+            "key": "audio_url",
+            "label": "Áudio",
+            "kind": "audio",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "enable_watermark",
+            "label": "Marca d'água",
+            "type": "toggle",
+            "def": true
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "google/gemini-3-8-flash-lite-tts",
+      "name": "Gemini 3.8 Flash-Lite TTS",
+      "cat": "audio",
+      "note": "Voz do Google, versão leve e barata"
     }
   ],
   "release": {
