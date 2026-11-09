@@ -1,8 +1,8 @@
 {
   "version": "1.9.10",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Novos: Kling 4.0, PixVerse V6 Max, OmniHuman 2.0 e Gemini 3.8 Flash-Lite TTS (KIE)",
-  "updated": "2026-11-02",
+  "notes": "Novos: GPT Image 2.6 Flare e Sunburst (KIE), Kling 4.0 Flash (KIE e Higgsfield)",
+  "updated": "2026-11-09",
   "models": [
     {
       "provider": "kie",
@@ -1689,6 +1689,427 @@
       "name": "Gemini 3.8 Flash-Lite TTS",
       "cat": "audio",
       "note": "Voz do Google, versão leve e barata"
+    },
+    {
+      "provider": "kie",
+      "id": "gpt-image-2-6/flare-text-to-image",
+      "name": "GPT Image 2.6 Flare",
+      "cat": "image",
+      "note": "Gera e edita imagens, com saída em GIF animado e SVG",
+      "def": {
+        "vendor": "OpenAI",
+        "prompt": "req",
+        "desc": "GPT Image 2.6 Flare: texto ou até 16 imagens, GIF animado e SVG",
+        "group": "GPT Image",
+        "variants": [
+          {
+            "id": "gpt-image-2-6/flare-text-to-image",
+            "needs": null
+          },
+          {
+            "id": "gpt-image-2-6/flare-image-to-image",
+            "needs": "input_urls"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "input_urls",
+            "label": "Imagens de referência",
+            "kind": "image",
+            "max": 16,
+            "as": "array"
+          },
+          {
+            "key": "mask_url",
+            "label": "Máscara (retoque local)",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "auto",
+              "1:1",
+              "3:2",
+              "2:3",
+              "4:3",
+              "3:4",
+              "5:4",
+              "4:5",
+              "16:9",
+              "9:16",
+              "2:1",
+              "1:2",
+              "21:9",
+              "9:21",
+              "3:1",
+              "1:3"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "1K",
+              "2K",
+              "4K"
+            ],
+            "def": "1K"
+          },
+          {
+            "key": "quality",
+            "label": "Qualidade",
+            "type": "select",
+            "options": [
+              "auto",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "output_format",
+            "label": "Formato",
+            "type": "select",
+            "options": [
+              "png",
+              "jpeg",
+              "webp",
+              "gif",
+              "svg"
+            ],
+            "def": "png"
+          },
+          {
+            "key": "background",
+            "label": "Fundo (só 1K)",
+            "type": "select",
+            "options": [
+              "auto",
+              "opaque",
+              "transparent"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "complexity",
+            "label": "Complexidade",
+            "type": "select",
+            "options": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "def": "high"
+          },
+          {
+            "key": "moderation",
+            "label": "Moderação",
+            "type": "select",
+            "options": [
+              "auto",
+              "low"
+            ],
+            "def": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "gpt-image-2-6/sunburst-text-to-image",
+      "name": "GPT Image 2.6 Sunburst",
+      "cat": "image",
+      "note": "Gera e edita imagens, com saída em GIF animado e SVG",
+      "def": {
+        "vendor": "OpenAI",
+        "prompt": "req",
+        "desc": "GPT Image 2.6 Sunburst: texto ou até 16 imagens, GIF animado e SVG",
+        "group": "GPT Image",
+        "variants": [
+          {
+            "id": "gpt-image-2-6/sunburst-text-to-image",
+            "needs": null
+          },
+          {
+            "id": "gpt-image-2-6/sunburst-image-to-image",
+            "needs": "input_urls"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "input_urls",
+            "label": "Imagens de referência",
+            "kind": "image",
+            "max": 16,
+            "as": "array"
+          },
+          {
+            "key": "mask_url",
+            "label": "Máscara (retoque local)",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "auto",
+              "1:1",
+              "3:2",
+              "2:3",
+              "4:3",
+              "3:4",
+              "5:4",
+              "4:5",
+              "16:9",
+              "9:16",
+              "2:1",
+              "1:2",
+              "21:9",
+              "9:21",
+              "3:1",
+              "1:3"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "1K",
+              "2K",
+              "4K"
+            ],
+            "def": "1K"
+          },
+          {
+            "key": "quality",
+            "label": "Qualidade",
+            "type": "select",
+            "options": [
+              "auto",
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "output_format",
+            "label": "Formato",
+            "type": "select",
+            "options": [
+              "png",
+              "jpeg",
+              "webp",
+              "gif",
+              "svg"
+            ],
+            "def": "png"
+          },
+          {
+            "key": "background",
+            "label": "Fundo (só 1K)",
+            "type": "select",
+            "options": [
+              "auto",
+              "opaque",
+              "transparent"
+            ],
+            "def": "auto"
+          },
+          {
+            "key": "complexity",
+            "label": "Complexidade",
+            "type": "select",
+            "options": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "def": "high"
+          },
+          {
+            "key": "moderation",
+            "label": "Moderação",
+            "type": "select",
+            "options": [
+              "auto",
+              "low"
+            ],
+            "def": "auto"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "kie",
+      "id": "kling-4.0/flash-reference-to-video",
+      "name": "Kling 4.0 Flash",
+      "cat": "video",
+      "note": "Versão rápida do Kling 4.0: 3 a 20 s em 720p",
+      "def": {
+        "vendor": "Kling",
+        "prompt": "req",
+        "desc": "Kling 4.0 Flash: 3 a 20 s em 720p, com referências ou primeiro quadro",
+        "group": "Kling",
+        "variants": [
+          {
+            "id": "kling-4.0/flash-reference-to-video",
+            "needs": null
+          },
+          {
+            "id": "kling-4.0/flash-keyframe-to-video",
+            "needs": "first_frame_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_urls",
+            "label": "Imagens de referência",
+            "kind": "image",
+            "max": 10,
+            "as": "array"
+          },
+          {
+            "key": "video_urls",
+            "label": "Vídeos de referência",
+            "kind": "video",
+            "max": 5,
+            "as": "array"
+          },
+          {
+            "key": "first_frame_url",
+            "label": "Primeiro quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 3,
+            "max": 20,
+            "step": 1,
+            "def": 5,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "9:16",
+              "1:1",
+              "21:9"
+            ],
+            "def": "16:9"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "hf",
+      "id": "kling-video/v4.0-flash/text-to-video",
+      "name": "Kling 4.0 Flash",
+      "cat": "video",
+      "note": "Versão rápida do Kling 4.0: 3 a 20 s em 720p",
+      "def": {
+        "vendor": "Kling",
+        "prompt": "req",
+        "desc": "Kling 4.0 Flash: clipes de 3 a 20 s em 720p, texto ou imagem para vídeo",
+        "group": "Kling",
+        "variants": [
+          {
+            "id": "kling-video/v4.0-flash/text-to-video",
+            "needs": null
+          },
+          {
+            "id": "kling-video/v4.0-flash/image-to-video",
+            "needs": "image_url"
+          }
+        ],
+        "inputs": [
+          {
+            "key": "image_url",
+            "label": "Primeiro quadro",
+            "kind": "image",
+            "max": 1,
+            "as": "string"
+          }
+        ],
+        "params": [
+          {
+            "key": "duration",
+            "label": "Duração",
+            "type": "slider",
+            "min": 3,
+            "max": 20,
+            "step": 1,
+            "def": 10,
+            "cast": "int",
+            "suffix": "s"
+          },
+          {
+            "key": "resolution",
+            "label": "Resolução",
+            "type": "select",
+            "options": [
+              "720p"
+            ],
+            "def": "720p"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": "Proporção",
+            "type": "select",
+            "options": [
+              "16:9",
+              "9:16",
+              "1:1",
+              "21:9"
+            ],
+            "def": "16:9"
+          }
+        ],
+        "allow": {
+          "kling-video/v4.0-flash/text-to-video": [
+            "prompt",
+            "duration",
+            "resolution",
+            "aspect_ratio"
+          ],
+          "kling-video/v4.0-flash/image-to-video": [
+            "prompt",
+            "image_url",
+            "duration",
+            "resolution"
+          ]
+        }
+      }
     }
   ],
   "release": {
