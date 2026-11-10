@@ -1,8 +1,8 @@
 {
-  "version": "1.9.10",
+  "version": "1.9.11",
   "download": "https://github.com/edielsonsilvaldnew-web/edih-studio-updates",
-  "notes": "Novos: GPT Image 2.6 Flare e Sunburst (KIE), Kling 4.0 Flash (KIE e Higgsfield)",
-  "updated": "2026-11-09",
+  "notes": "Novos modelos: GPT Image 2.6 (Flare, Sunburst e Economy), Kling 4.0 Flash, Gemini Omni 1.2 Flash, Suno V6 (música com voz), Kling 4.0 pelo Higgsfield e efeitos sonoros ElevenLabs SFX v3.",
+  "updated": "2026-11-10",
   "models": [
     {
       "provider": "kie",
@@ -2115,35 +2115,35 @@
   "release": {
     "win": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/win/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/win/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/win/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/win/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/win/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/win/part4"
       ],
-      "sha256": "4538d079c567ba76ef2045ea2fb5f984bf7bd0047c5489a4b59b6763e813b045",
-      "size": 119808247
+      "sha256": "7f1d0503fd100babb08d4024c0b71404378bb21a5cacd2f9a53af5a25f5f43c6",
+      "size": 119809577
     },
     "mac_arm": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-arm/part3"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-arm/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-arm/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-arm/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-arm/part3"
       ],
-      "sha256": "3ce4e950c42ed9146fe1fa791f77247e7d9b9b66a555f04ac973cfb680d9f144",
-      "size": 101420372
+      "sha256": "003884691c16cc55253a0d0674fe4c553eddb9afb2db36156f33afa8407edf10",
+      "size": 101452320
     },
     "mac_intel": {
       "parts": [
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part0",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part1",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part2",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part3",
-        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.10/mac-intel/part4"
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-intel/part0",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-intel/part1",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-intel/part2",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-intel/part3",
+        "https://raw.githubusercontent.com/edielsonsilvaldnew-web/edih-studio-releases/main/1.9.11/mac-intel/part4"
       ],
-      "sha256": "b0cb23cc6dc3b0297d4d3389a8f23987ea1a30386088b0f2323ce89c519b1ff3",
-      "size": 110998140
+      "sha256": "753bf2577c61298d300ec10b567096c21f79eefa7145fc2fc7f7c832a01d96fd",
+      "size": 110979508
     }
   }
 }
