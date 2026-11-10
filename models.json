@@ -6,6 +6,24 @@
   "models": [
     {
       "provider": "kie",
+      "id": "ai-music-api/generate",
+      "name": "Suno V6",
+      "cat": "audio"
+    },
+    {
+      "provider": "kie",
+      "id": "google/gemini-omni-flash-1-2",
+      "name": "Gemini Omni 1.2 Flash",
+      "cat": "video"
+    },
+    {
+      "provider": "kie",
+      "id": "gpt-image-2-6/economy-text-to-image",
+      "name": "GPT Image 2.6 Economy",
+      "cat": "image"
+    },
+    {
+      "provider": "kie",
       "id": "nano-banana-2-1",
       "name": "Nano Banana 2.1",
       "cat": "image"
